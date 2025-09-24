@@ -12,12 +12,13 @@ body {
 }
 
 main {
-  padding: 5rem 0;
+  width: 100%;
+  padding: clamp(3rem, 8vw, 5rem) 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  gap: clamp(3rem, 6vw, 4rem);
 }
 
 code {
@@ -28,9 +29,8 @@ code {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
